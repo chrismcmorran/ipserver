@@ -7,4 +7,4 @@ app.get('*', (req, res) => {
     res.send(addr)
 })
 
-app.listen(3000, () => console.log('IP Server Started.'))
+app.listen(process.env.PORT, () => console.log('IP Server Started.'))
